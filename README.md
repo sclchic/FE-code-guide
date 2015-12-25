@@ -1,12 +1,2 @@
-Markdown语法
-
-## INSTALL
-
-#### 公共库安装
-```{bash}
-npm install
-bower install
-```
-
-#### 私有库安装
-```{bash}
+# 前端开发规范指南
+****
