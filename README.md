@@ -143,3 +143,41 @@
     insert_final_newline = true
 
 > EditorConfig使用详见 [官网](http://editorconfig.org/)
+
+<a name="html-standard"></a>
+## HTML相关规范
+
+<a name="grammar"></a>
+### 1.语法
+
+<a name="doctype"></a>
+### 2.文档类型
+
+> 在页面开头使用这个简单地doctype来启用标准模式，使其在每个浏览器中尽可能一致的展现；
+  虽然doctype不区分大小写，但是按照惯例，doctype大写   
+
+    <!DOCTYPE html>
+
+<a name="lang"></a>
+### 3.lang属性
+
+> 在html标签上加上lang属性，这会给语音工具和翻译工具帮助，告诉它们应该怎么去发音和翻译。
+
+    <html lang="zh-CN">
+        ...
+    </html>
+
+<a name="meta"></a>
+### 4.meta标签
+
+<a name="title"></a>
+### 5.title标签
+
+<a name="reference-file"></a>
+### 6.引入css,js
+
+<a name="label-semantics"></a>
+### 7.引入css,js
+
+<a name="general-template"></a>
+### 8.通用模板
