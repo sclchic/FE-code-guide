@@ -163,9 +163,14 @@
 
 > 在html标签上加上lang属性，这会给语音工具和翻译工具帮助，告诉它们应该怎么去发音和翻译。
 
-    <html lang="zh-CN">
+    <html lang="zh">
         ...
     </html>
+
+更多关于 **lang** 属性的说明 [在这里](http://www.w3.org/html/wg/drafts/html/master/dom.html#attr-lang)
+在sitepoint上可以查到 [语言列表](http://www.sitepoint.com/web-foundations/iso-2-letter-language-codes/)
+但sitepoint只是给出了语言的大类，例如中文只给出了zh，但是没有区分香港，台湾，大陆。而微软给出了一份更加 [详细的语言列表](https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx)，
+其中细分了zh-cn, zh-hk, zh-tw。
 
 <a name="meta"></a>
 ### 4.meta标签
@@ -173,11 +178,23 @@
 <a name="title"></a>
 ### 5.title标签
 
+推荐紧随 <meta charset> 标签之后，让浏览器优先获取页面标题。
+
 <a name="reference-file"></a>
 ### 6.引入css,js
 
+根据HTML5规范, 通常在引入CSS和JS时不需要指明 **type**，因为 **text/css** 和 **text/javascript** 分别是他们的默认值。
+
+#### HTML5 规范链接
+
+* [使用link](http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element)
+* [使用style](http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element)
+* [使用script](http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element)
+
 <a name="label-semantics"></a>
-### 7.引入css,js
+### 7.标签语义化
+
+
 
 <a name="general-template"></a>
 ### 8.通用模板
