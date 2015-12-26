@@ -38,6 +38,7 @@
 
 <a name="directory"></a>
 ### 文档目录结构
+<<<<<<< HEAD
 
 <a name="project-name"></a>
 ### 项目命名
@@ -142,10 +143,3 @@
     insert_final_newline = true
 
 > EditorConfig使用详见 [官网](http://editorconfig.org/)
-
-
-    
-
-
-
-
