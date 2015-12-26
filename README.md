@@ -32,3 +32,9 @@
 5. [编辑器配置说明](#editor-configuration)
 6. [前端构建工具说明](#construction-tool)
 7. [最后说说](#final-chat)
+
+<a name="universal-standard"></a>
+## 通用规范
+
+<a name="directory"></a>
+### 文档目录结构
