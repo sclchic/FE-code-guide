@@ -124,7 +124,8 @@
 
     统一团队成员编辑器设置
     利用 **EditorConfig**  统一，快速开始
-        1. 在项目中根目录新建一个 .editorconfig 文件，保存为 utf-8 格式。Windows 用户由于无法直接新建一个只有扩展名的文件，新建的时候在末尾多加一个点 即可（.editorconfig. ），也可以在命令行（CMD）中使用 echo.>.editorconfig 来创建。
+        1. 在项目中根目录新建一个 .editorconfig 文件，保存为 utf-8 格式。Windows 用户由于无法直接新建一个只有扩展名的文件，
+        新建的时候在末尾多加一个点 即可（.editorconfig. ），也可以在命令行（CMD）中使用 echo.>.editorconfig 来创建。
         2. 编辑 .editorconfig 文件
         3. 安装编辑器插件
         
