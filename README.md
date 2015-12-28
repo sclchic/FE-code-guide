@@ -178,7 +178,7 @@
 <a name="title"></a>
 ### 5.title标签
 
-推荐紧随 <meta charset> 标签之后，让浏览器优先获取页面标题。
+推荐紧随 '<meta charset>' 标签之后，让浏览器优先获取页面标题。
 
 <a name="reference-file"></a>
 ### 6.引入css,js
