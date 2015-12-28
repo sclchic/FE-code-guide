@@ -150,6 +150,12 @@
 <a name="grammar"></a>
 ### 1.语法
 
+* 使用小写标签名、属性名，属性名用中划线做分隔符。
+* 在属性上，使用双引号，不要使用单引号。
+* 不要在自动闭合标签结尾处使用斜线([HTML5规范](http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag)指出他们是可选的)
+* 不要省略可选的结束标签，省略不利于代码维护。例如：`</li>`, `</p>`。
+* boolean属性指不需要声明取值的属性，XHTML需要每个属性声明取值，但是HTML5并不需要。[更多](https://html.spec.whatwg.org/multipage/infrastructure.html#boolean-attributes)
+
 <a name="doctype"></a>
 ### 2.文档类型
 
@@ -175,10 +181,58 @@
 <a name="meta"></a>
 ### 4.meta标签
 
+> 通过声明一个明确的字符编码，让浏览器轻松、快速的确定适合网页内容的渲染方式，通常指定为 `UTF-8`，尽量将其作为 `head` 的第一个子元素。
+
+```
+    <meta charset="UTF-8">
+```
+
+> 优先使用IE最新版本([这个回答很不错](http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e))
+
+```
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+```
+
+> 为移动设备添加 `viewport`
+
+```
+    <meta name ="viewport" content ="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+```
+
+> 设置360浏览器为急速内核模式: `webkit` 为急速内核，`ie-comp` 为IE兼容内核，`ie-stand` 为IE标准内核。
+
+```
+    <meta name="renderer" content="webkit">
+```
+
+> 每个页面都应有一个不超过150个字符且能准确反映网页内容的描述标签，[文档](https://msdn.microsoft.com/zh-cn/library/ff723911(v=expression.40).aspx)
+
+```
+    <meta name="description" content="不超过150个字符">
+```
+
+> 页面关键字
+
+```
+    <meta name="keywords" content="">
+```
+
+> 定义网页作者
+
+```
+    <meta name="author" content="name, email">
+```
+
+> 禁止百度转码
+
+```
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+```
+
 <a name="title"></a>
 ### 5.title标签
 
-推荐紧随 <meta charset> 标签之后，让浏览器优先获取页面标题。
+推荐紧随 `<meta charset>` 标签之后，让浏览器优先获取页面标题。
 
 <a name="reference-file"></a>
 ### 6.引入css,js
@@ -194,7 +248,54 @@
 <a name="label-semantics"></a>
 ### 7.标签语义化
 
+* 根据HTML元素的本身语义去使用他们。
+* 禁止使用HTML5规范中被废弃的用于表现的标签，如下：
 
+```
+    basefont big blink center font marquee multicol nobr spacer tt
+```
+
+* 部分标签在HTML5中被重新定义或修改了语义，选择使用时要弄清语义，酌情使用。
+
+#### 语义化
+
+`dl` 元素：现在代表一组名称与值的关联列表，并且不再适用于聊天和对话，纯粹的对话推荐使用`p`。
+`b` 元素：HTML5 中代表一段文本，这段文本仅仅出于功利的目的被提请注意，这种目的里没有传达任何额外的重要性，也没有交替的语言和心情的意味，比如文档摘要的关键字，
+审查中的产品名，文本驱动的交互软件的可操作词，或文章的导引。
+`strong` 元素：HTML5 中代表强烈的重要性、严重性或内容的紧迫性。`strong` 不会改变 **所在句子的语意**，`em` 则会改变所在句子的语义。
+`i` 元素：HTML5 中赋予了新的语义，用来表示一段有着交替的语言和心情意味的文本，或者用来表明一种不同的文本质量的方式偏离平常的散文，比如分类命名，技术术语，其它语言的惯用短语，
+一个念头，画外音，或西文的船名。
+`figure` 元素：不仅仅是用来标记图片，可以是音频、视频、代码、引用、表格等。而且只有当这些内容属于文档一部分时，才应该使用 figure 元素包裹起来。
+
+> 无论如何，我们应当牢记，不应该使用 b 或 i 来实现加粗或倾斜的样式。只有在没有更适合的文本元素时，才使用 b, i 元素。例如：
+
+* `em` 可以表示强调或重读。
+* `strong` 可以表示重要性。
+* `mark` 可以表示相关性。
+* `cite` 可以标记著作名，如一本书、剧本或是一首歌。
+* `dfn` 可以标记术语的定义实例。
+* `var` 可以标记数学变量。
+
+> 为了提高可访问性，`img` 标签最好添加有意义的 `alt` 文案.
+
+[更多](http://html5doctor.com/)
 
 <a name="general-template"></a>
 ### 8.通用模板
+
+```
+    <!DOCTYPE html>
+    <html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chic</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+        <meta name ="viewport" content ="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="chic.css">
+    </head>
+    <body>
+        <script src="index.js"></script>
+    </body>
+    </html>
+```
