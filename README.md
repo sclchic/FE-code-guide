@@ -20,7 +20,6 @@
 3. [CSS相关规范](#css-standard)
     * [css语法](#css-grammar)
     * [书写规范](#writing-standard)
-    * [less使用规范](#less-standard)
     * [命名规范](#css-name)
     * [hack规范](#hack-standard)
     * [模块化](#modularization)
@@ -299,3 +298,154 @@
     </body>
     </html>
 ```
+
+<a name="css-grammar"></a>
+## css语法
+
+
+
+<a name="writing-standard"></a>
+### 书写规范（主要是less书写）
+
+* 每个属性声明末尾都要加分号
+
+```
+    .element {
+        color: red;
+    }
+```
+
+* 元素选择器用小写字母
+* 去掉小数点前面的0
+* 去掉数字中不必要的小数点和小数点前后的0
+
+```
+    .element {
+        /* width: 50.0px; */
+        width: 50px;
+    }
+```
+
+* 同个属性不同前缀的写法需要在垂直方向保持对齐，具体参照右边的写法
+
+```
+    .element {
+        -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+                border-radius: 3px;
+    
+        background: -webkit-linear-gradient(top, #fff 0, #eee 100%);
+        background:    -moz-linear-gradient(top, #fff 0, #eee 100%);
+        background:         linear-gradient(to bottom, #fff 0, #eee 100%);
+    }
+```
+
+* 无前缀的标准属性应该写在有前缀的属性后面
+* 用 `border: 0;` 代替 `border: none;`
+* 尽量少用 `*` 选择器
+* 如无必要，省略 0 值单位。这些单位包括：
+
+```
+   %|em|ex|ch|rem|vw|vh|vmin|vmax|cm|mm|in|pt|pc|px
+```
+
+* 如无必要，省略 url 中的引号
+* 不推荐使用 `id` 来书写样式
+
+* 空格
+
+```
+    .element + p { /* '{'前需要空格；选择器'>', '+', '~'前后需要空格 */
+        color: red !important; /* 属性名后面不需要空格，属性值前需要空格； `！important` '!'后不需要空格 */
+        background-color: rgba(0, 0, 0, .5); /* 属性值中的','后需要空格；属性值'('后和')'前不需要空格 */
+    }
+```
+
+* 空行
+
+```
+    .element, /* 多个规则的分隔符','后换行 */
+     div { /* '}'后换行 */
+        color: #fff;   
+        /* 不同选择器的属性之间加空行 */
+        p {
+            background-color: #c00;  /* 每个属性单独一行 */
+        }
+        /* '}'之后加空行 */
+    } /* '}'前换行 */
+```
+
+* 注释
+less中统一使用 `/* 注释 */` 类型注释。
+
+```
+    .element {
+        /* 缩进与下一行代码保持一致 */  
+        width: 50px;
+        color: red; /* color red */
+    }
+```
+
+* 颜色
+颜色16进制用小写字母；颜色16进制尽量用简写。
+
+```
+    .element {
+        color: #abcdef;
+        background-color: #012;
+    }
+```
+
+* 属性简写
+尽量分开写 `margin` `padding`
+
+```
+    .element {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+```
+
+* 媒体查询
+尽量将媒体查询的规则靠近与他们相关的规则，不要将他们一起放到一个独立的样式文件中，或者丢在文档的最底部，这样做只会让大家以后更容易忘记他们。
+
+```
+    .element {
+        ...
+    }
+    
+    .element-avatar{
+        ...
+    }
+    
+    @media (min-width: 480px) {
+        .element {
+            ...
+        }
+    
+        .element-avatar {
+            ...
+        }
+    }
+```
+
+* 特指less
+    1. `import` 的文件不加 `.less`后缀，统一用双引号
+```
+    @import "dialog";
+```
+
+    2.嵌套层数尽量少，控制在5层以内
+
+<a name="css-name"></a>
+### 命名规范
+
+* 由单词、中划线、数字组成，不允许使用拼音或者拼音缩写，甚至是拼音和英文混杂的形式
+* 不依据表现形式来命名，可根据内容来命名，可根据功能来命名。
+* 保证缩写后还能较为清晰保持原单词所能表述的意思，使用业界熟知的或者约定俗成的。
+
+<a name="hack-standard"></a>
+### hack规范
+
+<a name="modularization"></a>
+### 模块化
