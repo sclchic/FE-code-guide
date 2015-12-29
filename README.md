@@ -466,7 +466,7 @@ less中统一使用 `/* 注释 */` 类型注释。
 
 兼容IE8(包括IE8)以上的版本的浏览器
 
-```
+
     <table style="border: 1px solid rgb(192, 192, 192); color: rgb(68, 68, 68); display: table; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; font-family: Tahoma, Arial, Helvetica, sans-serif; height: 662px; line-height: 25.2px; margin: 0px; outline: rgb(68, 68, 68) none 0px; padding: 0px; text-decoration: none; width: 699px; word-break: break-word;" border="2" cellspacing="4" cellpadding="4">
     <tbody style="border: 0px none rgb(192, 192, 192); color: rgb(68, 68, 68); display: table-row-group; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; font-family: Tahoma, Arial, Helvetica, sans-serif; height: 662px; line-height: 25.2px; margin: 0px; outline: rgb(68, 68, 68) none 0px; padding: 0px; text-decoration: none; vertical-align: middle; width: 699px; word-break: break-word;">
     <tr style="border: 0px none rgb(192, 192, 192); color: rgb(68, 68, 68); display: table-row; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; font-family: Tahoma, Arial, Helvetica, sans-serif; height: 32px; line-height: 25.2px; margin: 0px; outline: rgb(68, 68, 68) none 0px; padding: 0px; text-decoration: none; vertical-align: middle; width: 699px; word-break: break-word;">
@@ -543,7 +543,7 @@ less中统一使用 `/* 注释 */` 类型注释。
     </tr>
     </tbody>
     </table>
-```
+
 
 <a name="modularization"></a>
 ### 模块化
