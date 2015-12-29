@@ -466,7 +466,7 @@ less中统一使用 `/* 注释 */` 类型注释。
 
 咱们只兼容IE8(包括IE8)以上的版本的浏览器；ie系列浏览器hack写法如下：
 
-<table style="width: 700px;" border="2" cellspacing="4" cellpadding="4">
+<table width="100%" border="1" cellspacing="0" cellpadding="0">
     <tr>
         <td valign="top" width="100">&nbsp;</td>
         <td valign="top" width="100"><strong>IE6</strong></td>
