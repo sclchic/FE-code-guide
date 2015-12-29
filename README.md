@@ -464,9 +464,9 @@ less中统一使用 `/* 注释 */` 类型注释。
 <a name="hack-standard"></a>
 ### hack规范
 
-兼容IE8(包括IE8)以上的版本的浏览器
+咱们只兼容IE8(包括IE8)以上的版本的浏览器；ie系列浏览器hack写法如下：
 
-<table>
+<table style="width: 700px;" border="2" cellspacing="4" cellpadding="4">
     <tr>
         <td valign="top" width="100">&nbsp;</td>
         <td valign="top" width="100"><strong>IE6</strong></td>
@@ -475,6 +475,69 @@ less中统一使用 `/* 注释 */` 类型注释。
         <td valign="top" width="100"><strong>IE9</strong></td>
         <td valign="top" width="100"><strong>IE10</strong></td>
         <td valign="top" width="100"><strong>现代浏览器</strong></td>
+    </tr>
+    <tr>
+        <td valign="top" width="100"><strong>*</strong></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230115-3317a1b2d8744119ba721e57981f05e4.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230118-3ed8adc1c72244afbf903e68da630ae9.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230118-beaef78954cd4a57a11e49611e9873ab.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230118-21f7874f37ed49c4918f324492ee9788.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+    </tr>
+    <tr>
+        <td valign="top" width="100"><strong>+</strong></td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230119-d6a347d67c55433cbd0c27e3a0381fc4.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230122-09e7e33f525a4b57aba01e74b6d209e3.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+    </tr>
+    <tr>
+        <td valign="top" width="100"><strong>-</strong></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230122-2af9923378514f54a95ce4d8de1aa598.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230122-5ccf4873cc684aab9ba9309837424c7b.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+    </tr>
+    <tr>
+        <td valign="top" width="100"><strong>!important</strong></td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230123-fca8bda6198548a1aecc3d1941cdd770.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230123-14c082392e4e4a1cb6f227d1cf15a538.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230123-b750ef4ce3d24cf388174e8fdaaa8395.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230123-750e257415fd4a43a3ad466de14c609e.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230123-22dca13fac5c4a2ba64c8ea59f059707.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230124-7d6a8dbffe314cc78561a7039414ecad.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230124-9c28bd9db76b4fe59feb132ebe7268f0.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230145-ba85ffbd0eef4f2aa25bcbe36b3abd3d.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230146-176770759bff40d59d08327d82029a29.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230146-cec9841a0a8647f0b352ff7fc148a6af.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+    </tr>
+    <tr>
+        <td valign="top" width="100"><strong>\9</strong></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230149-8404a97acf4d4925a9a6860e54219a52.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230149-c96f9cfc2c2046d6b956fabd7a9710d8.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230150-4ba6ba64c3794993b62f37321b074bcc.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230154-d9a308507753401699238764737930ec.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230155-78e49f3f30ef41dca3ec322f37abfc51.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230156-e80ca15057ed491f8bde64d3e9dfd323.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230156-8ceee87d70d3481598347a1ba99193da.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230156-4cc11537158849a88e14134c58b86749.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230156-4b0dddef3c4b4c0fa34589a69d603b55.png"><strong><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230156-94d93416b5e64f38bb3a9b8a27c53a4f.png" alt="image" width="36" height="36" border="0"></strong></a></td>
+        <td valign="top" width="100">&nbsp;</td>
+    </tr>
+    <tr>
+        <td valign="top" width="100"><strong>\0</strong></td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230157-cc73ef93c25a458fb40deaffed9a17b5.png"><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230157-cb6f463d139e4ff8a3845661eae3acaa.png" alt="image" width="36" height="36" border="0"></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230158-f15e6615d5a14f64ac76df5ea6c77018.png"><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230158-f0db39a870d1450dac83f72411663c78.png" alt="image" width="36" height="36" border="0"></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230158-1ba0189e4ccf46b3bea782a9e6c13e10.png"><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230158-9cc64a0377dd4453ad63d41aa9ed3bfc.png" alt="image" width="36" height="36" border="0"></a></td>
+        <td valign="top" width="100">&nbsp;</td>
+    </tr>
+    <tr>
+        <td valign="top" width="100"><strong>\9\0</strong></td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100">&nbsp;</td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230157-cc73ef93c25a458fb40deaffed9a17b5.png"><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230157-cb6f463d139e4ff8a3845661eae3acaa.png" alt="image" width="36" height="36" border="0"></a></td>
+        <td valign="top" width="100"><a href="http://images.cnitblog.com/blog/349217/201308/30230157-cc73ef93c25a458fb40deaffed9a17b5.png"><img style="display: inline; border-width: 0px;" title="image" src="http://images.cnitblog.com/blog/349217/201308/30230157-cb6f463d139e4ff8a3845661eae3acaa.png" alt="image" width="36" height="36" border="0"></a></td>
+        <td valign="top" width="100">&nbsp;</td>
     </tr>
 </table>
 
