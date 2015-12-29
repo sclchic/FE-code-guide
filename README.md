@@ -42,15 +42,13 @@
 <a name="project-name"></a>
 ### 2.项目命名
 
-全部采用小写方式，以下划线分割,名称尽量简洁。
+全部采用小写方式，以下划线分割，名称尽量简洁。
 例如：chic_project_name
 
 <a name="catalog-name"></a>
 ### 3.目录命名
 
-参照项目命名规范；
-但是注意，统一不使用复数命名法。
-例如：命名为scripts, styles, images ...
+参照项目命名规范，但是注意，统一不使用复数命名法。例如：命名为scripts, styles, images ...
 
 <a name="notes"></a>
 ### 4.注释
@@ -152,7 +150,7 @@
 
 * 使用小写标签名、属性名，属性名用中划线做分隔符。
 * 在属性上，使用双引号，不要使用单引号。
-* 不要在自动闭合标签结尾处使用斜线([HTML5规范](http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag)指出他们是可选的)
+* 不要在自动闭合标签结尾处使用斜线([HTML5规范](http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag)指出他们是可选的)。
 * 不要省略可选的结束标签，省略不利于代码维护。例如：`</li>`, `</p>`。
 * boolean属性指不需要声明取值的属性，XHTML需要每个属性声明取值，但是HTML5并不需要。[更多](https://html.spec.whatwg.org/multipage/infrastructure.html#boolean-attributes)
 
@@ -237,7 +235,7 @@
 <a name="reference-file"></a>
 ### 6.引入css,js
 
-根据HTML5规范, 通常在引入CSS和JS时不需要指明 **type**，因为 **text/css** 和 **text/javascript** 分别是他们的默认值。
+根据HTML5规范，通常在引入CSS和JS时不需要指明 **type**，因为 **text/css** 和 **text/javascript** 分别是他们的默认值。
 
 #### HTML5 规范链接
 
